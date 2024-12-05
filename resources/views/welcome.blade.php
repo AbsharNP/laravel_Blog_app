@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>BlogApp - Welcome</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}"> <!-- Include the custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}"> 
 </head>
 <body>
     <!-- Hero Section -->
@@ -15,11 +15,10 @@
             <h1>Welcome to BlogApp</h1>
             <p>Your destination for creating and sharing amazing blog posts.</p>
             <a href="{{ route('login') }}" class="btn btn-light btn-lg me-2">Login</a>
-            <a href="{{ route('register') }}" class="btn btn-outline-light btn-lg">Register</a>
+            {{-- <a href="{{ route('register') }}" class="btn btn-outline-light btn-lg">Register</a> --}}
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features-section">
         <div class="container">
             <h2>Why Choose BlogApp?</h2>

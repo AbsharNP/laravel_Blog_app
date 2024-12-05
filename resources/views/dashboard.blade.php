@@ -5,12 +5,10 @@
         </h2>
     </x-slot>
 
-    <!-- Search Form -->
     <div class="max-w-xs mx-auto sm:px-6 lg:px-8">
         <input type="text" id="search" placeholder="Search Posts" class="border p-2 rounded w-full" />
     </div>
 
-    <!-- Posts Section -->
     <div id="posts-section">
         @foreach($posts as $post)
         <div class="py-12">
